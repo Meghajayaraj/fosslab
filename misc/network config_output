@@ -1,0 +1,50 @@
+All currently available interfaces
+eno1: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        ether ac:e2:d3:73:b0:79  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 3075  bytes 306586 (306.5 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 3075  bytes 306586 (306.5 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+wlo1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.3.127  netmask 255.255.252.0  broadcast 192.168.3.255
+        inet6 fe80::2c3c:b942:9a9f:6475  prefixlen 64  scopeid 0x20<link>
+        ether d4:6a:6a:aa:27:21  txqueuelen 1000  (Ethernet)
+        RX packets 424049  bytes 270720154 (270.7 MB)
+        RX errors 0  dropped 433  overruns 0  frame 0
+        TX packets 89397  bytes 9845919 (9.8 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+Temporarily configuring the IP Address...
+
+Verification of the set IP address...
+wlo1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.3.127  netmask 255.255.252.0  broadcast 192.168.3.255
+        inet6 fe80::2c3c:b942:9a9f:6475  prefixlen 64  scopeid 0x20<link>
+        ether d4:6a:6a:aa:27:21  txqueuelen 1000  (Ethernet)
+        RX packets 424049  bytes 270720154 (270.7 MB)
+        RX errors 0  dropped 433  overruns 0  frame 0
+        TX packets 89397  bytes 9845919 (9.8 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+
+Configuring a default gateway...
+SIOCADDRT: File exists
+
+Verifying default gateway configuration...
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+0.0.0.0         192.168.0.8     0.0.0.0         UG    0      0        0 wlo1
+0.0.0.0         192.168.0.3     0.0.0.0         UG    600    0        0 wlo1
+169.254.0.0     0.0.0.0         255.255.0.0     U     1000   0        0 wlo1
+192.168.0.0     0.0.0.0         255.255.252.0   U     600    0        0 wlo1
+
