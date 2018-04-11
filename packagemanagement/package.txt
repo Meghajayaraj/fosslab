@@ -1,0 +1,28 @@
+1. Update package list 
+sudo apt-get update  
+
+2. Upgrading installed packages 
+sudo apt-get upgrade
+
+3. Upgrading Ubuntu Release
+sudo apt-get dist-upgrade
+
+4. Searching for a package
+(searching for package bison)
+apt-cache search bison
+
+5. Show info about package
+apt-cache show bison
+
+6.Install package
+sudo apt-get install samba 
+
+7. Install a package from local filesystem
+sudo dpkg -i packagename.deb
+(will show example)
+
+8. Remove Packages
+sudo apt-get remove samba
+
+9. To remove unwanted dependencies that are not used
+sudo apt-get auto-remove
