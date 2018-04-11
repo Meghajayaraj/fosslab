@@ -1,0 +1,13 @@
+My name is Megha vkWhitespaces and tabs don't matter
+The data types are  Scalars Arrays Hashes
+a = 4
+Escape characters " ' $ \ 
+Full array : 6 8 2
+Elements one by one : 6 8 2 
+Hash elements one by one : 1 2 3
+Concatenated strings of abc, def : megha
+Various operations : 3 -1 2 0.5
+Perl has multiline strings : Abc
+def
+ghi 
+
