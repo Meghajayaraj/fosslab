@@ -1,0 +1,15 @@
+#Download linux-.16.tar.xz
+ 
+tar -xvJf linux-4.16.tar.xz
+cd linux-4.16.tar.xz
+sudo apt-get install libncurses5-dev libncursesw5-dev
+sudo apt-get install libssl-dev
+make menuconfig
+
+make 
+
+make modules
+
+sudo make modules_install
+
+sudo make install
